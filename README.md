@@ -4,11 +4,14 @@
 Abstract— This  paper  presents  a  6  DoF  real-time  vehiclelocalization  based  on  hybrid  octrees.  Our  approach  is  basedon  a  new  representation  never  applied  to  vehicle  localization. It allows to reduce the memory footprint of the map and signif-icantly  lower  the  computation  load  for  the  online  localization. Our  approach  has  shown  to  perform  well  on  both  CPUs  andGPUs.  The  algorithm  design  allows  to  run  the  localizationsimultaneously  on  both  architectures.  The  paper  gives  insightcovering  the  calibration  of  the  mobile  mapping  setup  to  the 6  DoF  localization  process.  Our  experiments  shows  that  ourmethod  is  both  accurate  and  reliable  on  several  datasets  and platforms. The positioning performance is significant with 5 cm and  0.01 degrees  angular  RMSE
 
 
+
+
 [![](https://img.youtube.com/vi/BLnmOXnFlSA/0.jpg)](https://www.youtube.com/watch?v=BLnmOXnFlSA)
 
- Vincent VAUCHEY¹, Yohan Dupuis¹, Pierre MERRIAUX², Fourre Jérémy¹, Xavier SAVATIER¹.  
+Vincent VAUCHEY¹, Yohan DUPUIS¹, Pierre MERRIAUX², Jérémy FOURRE¹, Xavier SAVATIER¹.  
 ¹[ESIGELEC](http://www.esigelec.fr/) , IRSEEM, Rouen, France, Normandie Univ, UNIROUEN,   
 ²[Leddartech](http://www.leddartech.com.),   Quebec   City,   Canada
+
 vauchey@esigelec.fr
 dupuis@esigelec.fr
 fourre@esigelec.fr
@@ -38,6 +41,11 @@ In addition of this very accurate IMU, we're also using a postprocessing applica
 ### DATASET 2020/02/18 (NOT YET AVAILAIBLE) : 
 Weather : Winter sun and some clouds
 * Loop 1 [30km/h(Download)](http://www.esigelec.fr/) , [40km/h(Download)](http://www.esigelec.fr/),  [50km/h(Download)](http://www.esigelec.fr/)
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t" width="640" height="480"></iframe>
+
+
+
 * Loop 2 [30km/h(Download)](http://www.esigelec.fr/) , [40km/h(Download)](http://www.esigelec.fr/),  [50km/h(Download)](http://www.esigelec.fr/)
 * [carpark(Download)](http://www.esigelec.fr/)
 
