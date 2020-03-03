@@ -42,8 +42,17 @@ In addition of this very accurate IMU, we're also using a postprocessing applica
 Weather : Winter sun and some clouds
 * Loop 1 [30km/h(Download)](http://www.esigelec.fr/) , [40km/h(Download)](http://www.esigelec.fr/),  [50km/h(Download)](http://www.esigelec.fr/)
 
+<dl>
+<figure class="video_container">
 <iframe src="https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t" width="640" height="480"></iframe>
+</figure>
+</dl>
+<figure class="video_container">
+<iframe width="560" height="315" src="//www.youtube.com/embed/5xK8RK54IAc" frameborder="0" allowfullscreen></iframe>
+</figure>
 
+
+[![](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t)](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t)
 
 
 * Loop 2 [30km/h(Download)](http://www.esigelec.fr/) , [40km/h(Download)](http://www.esigelec.fr/),  [50km/h(Download)](http://www.esigelec.fr/)
