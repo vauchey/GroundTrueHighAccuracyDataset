@@ -74,6 +74,10 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
         * lidarCorrectedSynchronisedImuPostPro.zip : lidar corrected  + imu + postpro synchronised
         * lidarUnCompensatedImuPostProUnsynchronised : lidar uncorrected + imu + postpro unsynchronised (Download)
 
+    * Calibrations :
+        * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
+        * Car odometry and IMU have the same measurement points (rear axle)
+        * Transformation lidar to rgbd Camera (Tx,Ty,Tz,Rx,Ry,Rz) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py)
     
 
 
@@ -82,7 +86,7 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
 
 * Loop2 : Winter sun and some clouds with one short tunnel (~2.6 km)
 
-    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EpMb2wsK-NpGrhTXduyHqCsBPwkXS0PnqqerVkWSDt3SBw?e=O7XbQ0)
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EpMb2wsK-NpGrhTXduyHqCsBPwkXS0PnqqerVkWSDt3SBw?e=m6i0lU)
     * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EorAB27JGmBCinzCaIx3-BABeothYaj082p_ULneF3W90A?e=rCeS9S)
     * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EuxwP_jf_ftEgLOtLrW8rEcBcGaAB138aQH0VoWES5mRTQ?e=ZVXkvt)
 
@@ -95,7 +99,12 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
         * imagesSynchronisedImuPostPro.zip : images + imu + postpro synchronised
         * lidarCorrectedSynchronisedImuPostPro.zip : lidar corrected  + imu + postpro synchronised
         * lidarUnCompensatedImuPostProUnsynchronised : lidar uncorrected + imu + postpro unsynchronised (Download)
-
+    
+    * Calibrations :
+        * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
+        * Car odometry and IMU have the same measurement points (rear axle)
+        * Transformation lidar to rgbd Camera (Tx,Ty,Tz,Rx,Ry,Rz) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py) .
+        
 
 List of sensors and software used :
 * vlp16 Lidar synchronised on GPS ([Velodyne](https://velodynelidar.com/))
@@ -103,8 +112,9 @@ List of sensors and software used :
 * LANDYN IMU + post processing software APPS ([IXblue](https://www.ixblue.com/))
 * D435 trigged on IMU ([intelrealsense](https://www.intelrealsense.com/depth-camera-d435))
 * Peiseler odometer mounted on the right rear wheel.
-* PCAN-USB ([peak-system](https://www.peak-system.com)) 
 * RTMAPS ([Intempora](https://intempora.com/)) Realtime acquisition software (can also be used to replay datasets)
+* Rtk correction network ([teria](https://www.reseau-teria.com/reseau/)) 
+* PCAN-USB ([peak-system](https://www.peak-system.com)) 
 ![](images/espace1.jpg )
 
 
