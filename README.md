@@ -74,7 +74,7 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
         * lidarCorrectedSynchronisedImuPostPro.zip : lidar corrected  + imu + postpro synchronised
         * lidarUnCompensatedImuPostProUnsynchronised : lidar uncorrected + imu + postpro unsynchronised (Download)
 
-    * Calibrations :
+    * Calibrations (X forward, Y left, Z Up) :
         * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
         * Car odometry and IMU have the same measurement points (rear axle)
         * Transformation lidar to rgbd Camera (Tx,Ty,Tz,Rx,Ry,Rz) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py)
@@ -100,10 +100,10 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
         * lidarCorrectedSynchronisedImuPostPro.zip : lidar corrected  + imu + postpro synchronised
         * lidarUnCompensatedImuPostProUnsynchronised : lidar uncorrected + imu + postpro unsynchronised (Download)
     
-    * Calibrations :
-        * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
+    * Calibrations (X forward, Y left, Z Up) :
+        * Transformation IMU to Lidar  (Tx(m),Ty(m),Tz(m),Rx(deg),Ry(deg),Rz(deg)) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
         * Car odometry and IMU have the same measurement points (rear axle)
-        * Transformation lidar to rgbd Camera (Tx,Ty,Tz,Rx,Ry,Rz) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py) .
+        * Transformation lidar to rgbd Camera  (Tx(m),Ty(m),Tz(m),Rx(deg),Ry(deg),Rz(deg)) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py) .
         
 
 List of sensors and software used :
