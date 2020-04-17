@@ -136,7 +136,7 @@ Calibrations (X forward, Y left, Z Up) :
 * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
 * Car odometry and IMU have the same measurement points (rear axle)
 * Transformation lidar to rgbd Camera (Tx,Ty,Tz,Rx,Ry,Rz) : [0.74,-0.43, 0.0,0.0,0.0,0.0], python code to read XYZ png file is availaible [here](code/convertionImageXYZto3D.py)
-
+* Camera intrinsic calibration availaible [here](https://esigelec-my.sharepoint.com/:t:/g/personal/vauchey_esigelec_fr/EX0QY8SadelDo6IuNx0krBsBeEOZIGlivtcV2bfRhXYKvQ?e=E1E4CN)
 ### Context :
 The dataset localization are datasets on same road than the French Project "Rouen Normandy Autonomous Lab" with Renault and Transdev partners:
 
