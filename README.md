@@ -1,12 +1,16 @@
 
-# 6Dof Vehicule Localization using Hybrid Octrees Paper (Submitted to [ITSC2020](https://www.ieee-itsc2020.org/)  ) by [ESIGELEC](https://www.esigelec.fr/)
+# 6Dof Vehicule Localization using Hybrid Octrees Paper ( by [ESIGELEC](https://www.esigelec.fr/) )
 
 ## News :
-* 2020/05/07 : Because the paper was refused, dataset link are removed, they will reaper for the next paper published/accepted. Contact me directly if you really want to use.
+* 2020/06/18 : A new dataset is availaible  [here](#JUNE) on same road than previous.
+
+* 2020/05/15 : A new dataset is availaible  [here](#MAY) on same road than previous.
+
+* April 2020 : Due to the COVID19, no dataset were done in appril.
 
 * 2020/03/17 : A second dataset is availaible  [here](#MARCH) on same road than previous.
 
-* 2020/02/18 : A first dataset is availaible [here](#FEBRUARY) (datasets used for ITSC2020).
+* 2020/02/18 : A first dataset is availaible [here](#FEBRUARY).
 
 ## Abstract :
 This paper presents a 6DoF real-time vehicle localization
@@ -61,13 +65,58 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
 | Pitch/Roll (deg)  | 0.005 (RTK) / 0.005 (GNSS outage 60s) | 0.008 (RTK) / 0.01 (GNSS outage 60s) | 0.03
 | Heading (deg)  | 0.01 | 0.020 | 0.1
 
+
+
+<a id="JUNE"></a>
+#### DATASET 2020/06/18 : 
+* Loop1 : spring (~1.5km)
+    * [30 km/h dataset A (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/ErujLvb0ufNJqexWqK5t9osB4wiRCBqWkDhf-Hs8n9THzA?e=NRxtrb)
+    * [30 km/h dataset B (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ej_DTOtolhJAp4cuCuloe48Bqr5yaOOwSLM92IaGkHt6Ww?e=WiN4pq)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ev36VlHztxBLmhAFQZa3jNIBFdsxjARL92Mo55r7TsmfWA?e=tqeJ65)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EqFT0gamyOxNuolLaciuR_AB-d0DoifVw99eFztqzrUBOA?e=7p7SiH)
+    * [Directory Tree and calibrations](#TREE)
+
+    [maps preview](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t)
+
+* Loop2 :  spring (~1.5km)
+
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EoqI0XOX-iVIkStuW3IridIBU-ipx67q_TdDamulcjxD8A?e=JhMDlX)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EpqJgCKKnYBNqiveFdPhqpkBF_OvdudCmNqk4wUeHKakoA?e=l7pa3z))
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EnNB1br-jmxBjUlZcbKNcKcBu4cJ3iUdwtvmgPQeHRCFZA?e=yumX0y)
+    * [Directory Tree and calibrations](#TREE)
+
+    [maps preview](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
+
+
+<a id="MAY"></a>
+#### DATASET 2020/05/15 : 
+* Loop1 : spring (~1.5km)
+
+    * [30 km/h dataset A (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ehk4_TSEGUpLprbhiPz7dvEBVmp5LO0mXSd0oAs_VU3YyA?e=xvPyrB)
+    * [30 km/h dataset B (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EkCKDrejWjtFkreEdKUXZcoBg9AGwXGFrkMVNknwDI3Khw?e=cBqyIX)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EovsURKzUohBqABKHQpsn5UB8t5Q9NqGS9uUIkCBWsuU6w?e=skvJbo)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/ErY57Q-fKgRLs42T4DEW7lkBSudoRS1dX-AN-Bbh789IlA?e=iB4QCl)
+    * [Directory Tree and calibrations](#TREE)
+
+    [maps preview](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t)
+    Now no camera dataset will done due to the big amouth of data generated and the few interests of this kind of dataset.
+* Loop2 :  spring (~1.5km)
+
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Eh6APqwLUspJvYWgu4UcRZoBCrpKAiwcRAV3wFN4JiZDGg?e=yBcejT)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EhNCo4uUenVFhwUInuj6m38BBE6RaukFrZ2tbFFzNe-cmQ?e=Ikxxka))
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EuMEMjbX4slIgT6Pids7jR4B8IYntfxRlaOXgflDTC-PBg?e=108bDY)
+    * [Directory Tree and calibrations](#TREE)
+
+    [maps preview](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
+    Now no camera dataset will done due to the big amouth of data generated and the few interests of this kind of dataset.
+
 <a id="FEBRUARY"></a>
 #### DATASET 2020/02/18 : 
 * Loop1 : Winter sun and some clouds (~1.5km)
-    * [30 km/h dataset A (Download)]()
-    * [30 km/h dataset B (Download)]()
-    * [40 km/h dataset (Download)]()
-    * [50 km/h dataset (Download)]()
+    * [30 km/h dataset A (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Es6-VHjNiZBOubLo9q2Q1yMBoJ9y7BUGPe2NENOk30hMSA?e=WaCXvv)
+    * [30 km/h dataset B (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ep6Z90zOKYVCipE6pUHEONwB_tNcZjKDh-ARI84gIa1-2w?e=pM3R5e)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EiKIg8MUu8dOqryis5O0QFYBwbs4CK7igzz_9DlccL1JoA?e=U2rvdL)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EqH7B0M1s0RMvxOBO7FcqfIB1vUxszmcxPL5-d4YIP9YLg?e=0Y0XhP)
     * [Directory Tree and calibrations](#TREE)
 
     [![](images/LOOP1.gif)](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t   )
@@ -81,9 +130,9 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
 
 * Loop2 : Winter sun and some clouds with one short tunnel (~2.6 km)
 
-    * [30 km/h dataset (Download)]()
-    * [40 km/h dataset (Download)]()
-    * [50 km/h dataset (Download)]()
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EpMb2wsK-NpGrhTXduyHqCsBPwkXS0PnqqerVkWSDt3SBw?e=m6i0lU)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EorAB27JGmBCinzCaIx3-BABeothYaj082p_ULneF3W90A?e=rCeS9S)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EuxwP_jf_ftEgLOtLrW8rEcBcGaAB138aQH0VoWES5mRTQ?e=ZVXkvt)
     * [Directory Tree and calibrations](#TREE)
 
     [![](images/LOOP2.gif)](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
@@ -97,19 +146,19 @@ In addition of this very high accurate IMU, we're also using a postprocessing ap
 Images will be availaible as soon as the containment due to the COVID19 will be finish.
 
 * Loop1 : Winter sun (~1.5km)
-    * [30 km/h dataset A (Download)]()
-    * [30 km/h dataset B (Download)]()
-    * [40 km/h dataset (Download)]()
-    * [50 km/h dataset (Download)]()
+    * [30 km/h dataset A (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Epl3hNJUPLZCoy6IWMNTANUBVNQIBkzYMGPoVdiwesmI8A?e=XlI1bo)
+    * [30 km/h dataset B (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EuCzgB2bsMNPvvh2F2uJyXsBR6S94p-nG2j4gCIl95Q2Fg?e=mbxzMa)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EpUYJXIIOBBCmVeVNDTEzY0BeX3aoa13xvPoDsl7oqROzA?e=aLZPNy)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/ErHtWZHchZBNsbFTgj7a4N0BifbNDwc2UOtceli3BklsnQ?e=NnnGL3)
     * [Directory Tree and calibrations](#TREE)
 
     [![](images/LOOP1_March.gif)](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t   )
 
 * Loop2 : Winter sun  (~2.6 km) {: #funky }
 
-    * [30 km/h dataset (Download)]()
-    * [40 km/h dataset (Download)]()
-    * [50 km/h dataset (Download)]()
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ejo-BdHUM3RLllubCrM5CR4BcTmivJZkLjhOAkxU6bZ1Lw?e=zA4vqO)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Empp_AwT1I5Ejkt7ORN6Hb0B3cqe_DiQUn9OsdJWGAfpMw?e=k9qW9w)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EnGsngNsyfJNmc6OXIcSKVkBsYvJUXxJp0fqcYi46UyvvQ?e=iZAZHV)
     * [Directory Tree and calibrations](#TREE)
 
     [![](images/LOOP2_March.gif)](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
