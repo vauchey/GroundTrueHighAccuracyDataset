@@ -1,7 +1,9 @@
 
-# 6Dof Vehicule Localization using Hybrid Octrees Paper ( by [ESIGELEC](https://www.esigelec.fr/) )
+# A Lightweight 6 DoF Algorithm for Online Vehicle Localization Paper ( Submitted to [IEEEAcess](https://ieeeaccess.ieee.org/)  by [ESIGELEC](https://www.esigelec.fr/) )
 
 ## News :
+* 2020/07/17 : A new dataset is availaible  [here](#JULY) on same road than previous.
+
 * 2020/06/18 : A new dataset is availaible  [here](#JUNE) on same road than previous.
 
 * 2020/05/15 : A new dataset is availaible  [here](#MAY) on same road than previous.
@@ -10,24 +12,17 @@
 
 * 2020/03/17 : A second dataset is availaible  [here](#MARCH) on same road than previous.
 
-* 2020/02/18 : A first dataset is availaible [here](#FEBRUARY).
+* 2020/02/18 : A first dataset is availaible (dataset used for paper) [here](#FEBRUARY).
 
 ## Abstract :
-This paper presents a 6DoF real-time vehicle localization
-based on hybrid octrees and LiDAR data. Our approach is
-based on a new representation never applied to vehicle
-localization. It allows to reduce the memory footprint of
-the map and significantly lower the computation load for
-the online localization. Our approach has shown to perform
-well on both CPUs and GPUs. The algorithm design allows to
-run the localization simultaneously on both architectures.
-The paper gives insight covering the calibration of the
-mobile mapping setup to the 6 DoF localization process. Our
-experiments shows that our method is both accurate and
-reliable on several datasets and platforms. The positioning
-performance is significant with 5cm and 0.08° angular RMSE. 
-
-
+This paper presents a 6 DoF (Degree of Freedom) real-time vehicle localization based on hybrid octrees and
+particle filtering of LiDAR data. Our approach is based on a two lighweight frameworks. It allows reducin
+gthe memory footprint of the map and significantly lower the computation load for the online localization.
+Our approach has shown to perform well on both CPUs and GPUs. The algorithm design allows running
+the localization simultaneously on both architectures. The paper gives insight covering the calibration of the
+mobile mapping setup to the 6 DoF localization process. Our experiments shows that our method is both
+accurate and reliable on several datasets and platforms. The positioning performance is significant with 5cm
+and 0.08° angular RMSE
 
 
 
@@ -56,7 +51,7 @@ The main reference dataset for lidar localisation is [KITTY](http://www.cvlibs.n
 
 We try to provide to the community some datasets done with a reference position with best positioning systems avaiblaibles in all conditions.
 The datasets ground True is done with a Landyns ([IXblue](https://www.ixblue.com/)) IMU based on fiber-optic-gyroscope (FOG), which is a technology wich ensure very low shift and noise between two gps position or when the gps accurancy become low.
-In addition of this very high accurate IMU, we're also using a postprocessing application ([APPS](https://www.ixblue.com/products/apps)) coupled whith a GPS RTK [septentrio](https://www.septentrio.com/) . The goal of this application is to increase the accurancy of ground true position expecially when there is tree/tunnel by doing forwar/backward Kallman Filter. Landyn IMU is an "old" IMU without new firmware release but with better FOG than IMU currently saled for civil application by [IXblue](https://www.ixblue.com/). The fact to use APPS software give the possibility to use processing algorithms numpy reinterpret castzof last IMU saled by Ixblue on our Landyn.
+In addition of this very high accurate IMU, we're also using a postprocessing application ([APPS](https://www.ixblue.com/products/apps)) coupled whith a GPS RTK [septentrio](https://www.septentrio.com/) . The goal of this application is to increase the accuracy of ground true position especially when there is tree/tunnel by doing forward/backward Kallman Filter. Landyn IMU is an "old" IMU without new firmware release but with better FOG than IMU currently in sale for civil application by [IXblue](https://www.ixblue.com/). The fact to use APPS software give the possibility to use processing algorithms used on the last IMU in sale by ([IXblue](https://www.ixblue.com/)) on our Landyn.
 
 ## IMU COMPARAISON :
 | IMU  | LANDYN ([IXblue](https://www.ixblue.com/))        | ATLANS ([IXblue](https://www.ixblue.com/))  | RT 3000 ([Oxts](https://www.oxts.com/))
@@ -163,8 +158,24 @@ Images will be availaible as soon as the containment due to the COVID19 will be 
 
     [maps preview](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
 
+<a id="JULY"></a>
+#### DATASET 2020/07/17 :
+* Loop1 : spring (~1.5km)
+    * [30 km/h dataset A (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EnPo0-de45lLsFEhULVKXH8BoSMQkGyzWyUnkafWne-nXA?e=RdPIO4)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EkZiHHTM2AFNhjh4VLVQerMB1an8b1NTCsv3M68Yrd4v-A?e=LsnKas)
+    * [50 km/h dataset (Download)]()https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EhYKzbIs4YVNkF-c2L3BxpkB8zRJdyp9SrBIsaAJ3e3ZkQ?e=pd4bL2
+    * [Directory Tree and calibrations](#TREE)
 
+    [maps preview](https://www.google.com/maps/d/embed?mid=1cAdJnWjBnK7ZZkCva8ftSXN_qYLh2o9t)
 
+* Loop2 :  spring (~1.5km)
+
+    * [30 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EqL1tBvP_gxHnFfxdvM1XRYBGVH-o3FRY0xaZ3HZA-TszA?e=mQkco2)
+    * [40 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/EjFRyTOLTV5Btt3PGaCe6f0Bm6DhRvmIkhGNl95GPK9u4g?e=cIR8mI)
+    * [50 km/h dataset (Download)](https://esigelec-my.sharepoint.com/:f:/g/personal/vauchey_esigelec_fr/Ei3GNUNjYnxGjsq7_6wAmHcBfl2Dxfe5I9k_67UmFN-EcQ?e=AIUFGi)
+    * [Directory Tree and calibrations](#TREE)
+
+    [maps preview](https://www.google.com/maps/d/embed?mid=1aRvGyCyWWRs2k5G5HH2M6DCKO5p3p3LA)
 
 List of sensors and software used :
 * vlp16 Lidar synchronised on GPS ([Velodyne](https://velodynelidar.com/))
@@ -175,14 +186,17 @@ List of sensors and software used :
 * RTMAPS ([Intempora](https://intempora.com/)) Realtime acquisition software (can also be used to replay datasets)
 * Rtk correction network ([teria](https://www.reseau-teria.com/reseau/)) 
 * PCAN-USB ([peak-system](https://www.peak-system.com)) 
+
 ![](images/espace1.jpg )
 
 <a id="TREE"></a>
 
 Directory Tree :
-* imagesSynchronisedImuPostPro.zip : images + imu + postpro synchronised
 * lidarCorrectedSynchronisedImuPostPro.zip : lidar corrected  + imu + postpro synchronised
 * lidarUnCompensatedImuPostProUnsynchronised : lidar uncorrected + imu + postpro unsynchronised (Download)
+* vehicleOdometry : vehicle longitudinal speed (m/s) and can yaw rate (r/s) timestamped but not calibrated.
+
+<span style="color:red">Due to European Union RGPD limitation, images were removed.</span>
 
 Calibrations (X forward, Y left, Z Up) :
 * Transformation IMU to Lidar (Tx,Ty,Tz,Rx,Ry,Rz) : [0.989,-0.024, 2.388,0.0,0.0,-0.385]
