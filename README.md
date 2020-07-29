@@ -39,7 +39,7 @@ savatier@esigelec.fr
 pierre.merriaux@leddartech.com
 
 
-Special Thanks to the members of the [SIRD](http://www.esigelec.fr/en/node/113) team : Marc DEHAIS, Anthony DESHAIS, Christophe ALEGRE
+Special Thanks to the members of the [SIRD](http://www.esigelec.fr/en/node/113) team : Marc DEHAIS, Anthony DESHAIS, Christophe ALEGRE, Pascal FALLA
 # Datasets
 Dataset Lidar/IMU/RGBD Camera done by [ESIGELEC](http://www.esigelec.fr/).
 
