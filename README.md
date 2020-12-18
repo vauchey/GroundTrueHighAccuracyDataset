@@ -1,5 +1,5 @@
 
-# A Lightweight 6 DoF Algorithm for Online Vehicle Localization Paper (Submitted to [IEEEAcess](https://ieeeaccess.ieee.org/)  by [ESIGELEC](https://www.esigelec.fr/))
+# GPS-free vehicle positioning for autonomous road public transportation based on data fusion (Submitted to [sensors](https://www.mdpi.com/journal/sensors/editorial_office)  by [ESIGELEC](https://www.esigelec.fr/))
 
 ## News :
 * 2020/07/17 : A new dataset is availaible  [here](#JULY) on same road than previous.
@@ -15,14 +15,7 @@
 * 2020/02/18 : A first dataset is availaible (dataset used for paper) [here](#FEBRUARY).
 
 ## Abstract :
-This paper presents a 6 DoF (Degree of Freedom) real-time vehicle localization based on hybrid octrees and
-particle filtering of LiDAR data. Our approach is based on a two lighweight frameworks. It allows reducin
-gthe memory footprint of the map and significantly lower the computation load for the online localization.
-Our approach has shown to perform well on both CPUs and GPUs. The algorithm design allows running
-the localization simultaneously on both architectures. The paper gives insight covering the calibration of the
-mobile mapping setup to the 6 DoF localization process. Our experiments shows that our method is both
-accurate and reliable on several datasets and platforms. The positioning performance is significant with 5cm
-and 0.08° angular RMSE
+This paper presents an approach relying on data fusion to achieve robust vehicle positioning for road public transportation. Road public transportation vehicles navigate in a known environment defined by fixed routes associated with each line. Our approach takes advantage of this feature to enable a vehicle positioning performance compatible with navigation. Our method is optimized to run in real time on embedded plateforms. It is lighweight both from the memory and computing standpoints. The framework is highly optimized to run massively parallel. We introduced a dataset recorded monthly with ground truth sensors to evaluate the positioning performance depending on the time of the year. It provides synchronized inertial, RTK GPS and LiDAR data. Our results show that an accuracy of 5 cm can be achieved without GPS on an embedded system.
 
 
 
