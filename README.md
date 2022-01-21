@@ -1,5 +1,5 @@
 
-# GPS-free vehicle positioning for autonomous road public transportation based on data fusion (Submitted to [sensors](https://www.mdpi.com/journal/sensors/editorial_office)  by [ESIGELEC](https://www.esigelec.fr/))
+# Particle filter meets hybrid octrees: an octree-based vehicle localization approach without learning (Submitted to IET Intelligent Transport Systems by [ESIGELEC](https://www.esigelec.fr/))
 
 ## News :
 * 2020/07/17 : A new dataset is availaible  [here](#JULY) on same road than previous.
@@ -15,24 +15,27 @@
 * 2020/02/18 : A first dataset is availaible (dataset used for paper) [here](#FEBRUARY).
 
 ## Abstract :
-This paper presents an approach relying on data fusion to achieve robust vehicle positioning for road public transportation. Road public transportation vehicles navigate in a known environment defined by fixed routes associated with each line. Our approach takes advantage of this feature to enable a vehicle positioning performance compatible with navigation. Our method is optimized to run in real time on embedded plateforms. It is lighweight both from the memory and computing standpoints. The framework is highly optimized to run massively parallel. We introduced a dataset recorded monthly with ground truth sensors to evaluate the positioning performance depending on the time of the year. It provides synchronized inertial, RTK GPS and LiDAR data. Our results show that an accuracy of 5 cm can be achieved without GPS on an embedded system.
+This paper presents a 6 DoF (Degree of Freedom) real-time vehicle localization based on hybrid octrees and particle filtering of LiDAR data. Our approach is based on two lightweight frameworks. It makes it possible to reduce the memory footprint of the map and significantly lowers the computation load for online localization. Our approach has shown to perform well on both CPUs and GPUs. The algorithm design makes it possible to run the localization simultaneously on both architectures. Our localization method is LiDAR agnostic. Our experiments have been carried out with two distinctive LiDAR technologies: scanning LiDAR and flash LiDAR. Our extensive experimental validation shows that our method is both accurate and reliable on several datasets, platforms and environments. We have especially shown that the same localization algorithms and parameters can perform well in urban and offroad environments. We have also evaluated the robustness of our method when masking angular sectors of the LiDAR field of view. The performance achieved with the flash LiDAR is close to the scanning LiDAR despite different resolutions and sensing modalities. The positioning performance is significant with 10cm and 0.12$\degree$ angular RMSE for both technologies. We evaluated our approach on the KITTI dataset and achieved fair results with respect to the state of the art. This paper also introduced the baseline performance on a multi-seasonal dataset we are publicly releasing to the community. We validated our approach in an off-road environment from a front view field of view with only 768 LiDAR points.
 
 
 
 [![](https://img.youtube.com/vi/BLnmOXnFlSA/0.jpg)](https://www.youtube.com/watch?v=BLnmOXnFlSA)
 
-Vincent VAUCHEY¹, Yohan DUPUIS¹, Pierre MERRIAUX², Jérémy FOURRE¹, Xavier SAVATIER¹.  
-¹[ESIGELEC](http://www.esigelec.fr/) , IRSEEM, Rouen, France, Normandie Univ, UNIROUEN,   
-²[Leddartech](http://www.leddartech.com.),   Quebec   City,   Canada
+Vincent VAUCHEY¹, Pierre MERRIAUX², Xavier SAVATIER³, Yohan DUPUIS⁴.  
+¹[ESIGELEC](http://www.esigelec.fr/) , IRSEEM, Rouen, France, Normandie Univ, UNIROUEN, 
+²[Leddartech](http://www.leddartech.com.),   Quebec   City,   Canada 
+³[ESIGELEC](https://navya.tech/fr/) , NAVYA, Paris, France
+⁴[CESI](http://www.cesi.fr/) , CESI, La Défense, Paris, France, 
+
+
 
 vauchey@esigelec.fr
-dupuis@esigelec.fr
-fourre@esigelec.fr
-savatier@esigelec.fr
 pierre.merriaux@leddartech.com
+xavier.savatier@navya.tech
+y.dupuis@cesi.fr
+fourre@esigelec.fr
 
-
-Special Thanks to the members of the [SIRD](http://www.esigelec.fr/en/node/113) team : Marc DEHAIS, Anthony DESHAIS, Christophe ALEGRE, Pascal FALLA
+Special Thanks to the members of the [SIRD](http://www.esigelec.fr/en/node/113) team : Marc DEHAIS, Anthony DESHAIS, Christophe ALEGRE, Pascal FALLA, Jérémy FOURRE
 # Datasets
 Dataset Lidar/IMU/RGBD Camera done by [ESIGELEC](http://www.esigelec.fr/).
 
