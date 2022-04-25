@@ -1,5 +1,5 @@
 
-# Particle filter meets hybrid octrees: an octree-based vehicle localization approach without learning (Submitted to IET Intelligent Transport Systems by [ESIGELEC](https://www.esigelec.fr/))
+# Particle filter meets hybrid octrees: an octree-based vehicle localization approach without learning (Submitted by [ESIGELEC](https://www.esigelec.fr/))
 
 ## News :
 * 2020/07/17 : A new dataset is availaible  [here](#JULY) on same road than previous.
